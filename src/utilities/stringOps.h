@@ -45,7 +45,7 @@ void makeLowerCase (std::string &input);
 */
 void makeUpperCase (std::string &input);
 
-const unsigned int factors[] = {1, 10, 100, 1'000, 10'000, 100'000, 1'000'000, 10'000'000, 100'000'000};
+const unsigned int factors[] = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000};
 /**@brief append the text of the integral part of a number to a string*/
 template <typename X> void appendInteger (std::string &input, X val)
 {
@@ -64,11 +64,11 @@ template <typename X> void appendInteger (std::string &input, X val)
      2 :
      (x < 1000 ?
       3 :
-      (x < 10'000 ?
+      (x < 10000 ?
        4 :
-       (x < 100'000 ?
+       (x < 100000 ?
         5 :
-        (x < 1'000'000 ? 6 : (x < 10'000'000 ? 7 : (x < 100'000'000 ? 8 : (x < 1'000'000'000 ? 9 : 500))))))));
+        (x < 1000000 ? 6 : (x < 10000000 ? 7 : (x < 100000000 ? 8 : (x < 1000000000 ? 9 : 500))))))));
     if (digits > 9)  // don't deal with really big numbers
     {
         input += std::to_string (x);
